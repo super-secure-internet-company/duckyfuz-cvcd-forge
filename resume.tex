@@ -8,7 +8,7 @@
 
 % HEADING SECTION STARTS HERE
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\large{Kenneth Gao}} $|$ {\href{mailto:hello@kenf.dev}{hello@kenf.dev}} $|$ {\href{www.kenf.dev}{\underline{www.kenf.dev}}} & \textbf{Location:} Singapore \\
+  \textbf{\large{Kenneth Gao}} $|$ {\href{mailto:hi@kenf.dev}{hi@kenf.dev}} $|$ {\href{www.kenf.dev}{\underline{www.kenf.dev}}} & \textbf{Location:} Singapore \\
   \href{https://linkedin.com/in/thisiskenf/}{\underline{linkedin.com/in/thisiskenf}} $|$ {\href{https://github.com/duckyfuz}{\underline{github.com/duckyfuz}}} $|$ {+65 88844154} & \textbf{}
 \end{tabular*}
 % END OF SECTION %
@@ -36,7 +36,7 @@
     \resumeSubheading{\textbf{Software Engineering Intern @ \textit{Jump Trading LLC}}}{May 2026 - Aug 2026}
     % \resumeDescription{One of the proprietary trading firms of all time}
     \resumeItemListStart
-      \resumeItem{Created tools to speed up incident response, among other things}
+      \resumeItem{Created tools to speed up incident response, among other fascinating things}
     \resumeItemListEnd
 
     \resumeSubheading{\textbf{Software Engineering Intern @ \textit{Open Government Products}}}{Sep 2025 - Feb 2026}
@@ -103,10 +103,11 @@
 \section{PROJECTS}
   \resumeSubHeadingListStart
 
-    \resumeSubheading{\textbf{Lightweight Bounds Checking for C/C++} $|$ \href{https://github.com/duckyfuz/llvm-project/pull/1}{\underline{LLVM instrumentation \& runtime}}}{Jan 2026 - Present}
-    \resumeItemListStart
-      \resumeItem{Developed a low-overhead bounds-checking tool for LLVM 23 using custom C++ passes to detect out-of-bounds memory accesses, based on \href{https://www.comp.nus.edu.sg/~gregory/papers/cc16lowfatptrs.pdf}{\underline{CC'16 (Duck \& Yap)}}'s methodology}
-      \resumeItem{Estimating a restricted heap allocation overhead of 11\% (compared to ASan's 146\%), while aiming for 13\% faster memory access times and a leaner physical memory (RSS) footprint}
+    \resumeSubheading{\textbf{Lightweight Bounds Checking for C/C++} $|$ \href{https://github.com/duckyfuz/llvm-flexfat/tree/flexfat/main}{\underline{LLVM instrumentation}}}{Jan 2026 - Present}
+      \resumeItemListStart
+        \resumeItem{Developed LLVM23 instrumentation and runtime support for bounds checking on AArch64 and x86, based on Duck \& Yap's \href{https://www.comp.nus.edu.sg/~gregory/papers/cc16lowfatptrs.pdf}{\underline{low-fat pointer methodology}}}
+        \resumeItem{Leveraged AArch64's Top Byte Ignore (TBI) to implement use-after-free detection}
+        \resumeItem{Measured 11\% lower runtime and 10\% lower peak RSS than HWASan on AArch64}
     \resumeItemListEnd
 
     \resumeSubheading{\textbf{Proxmox VE Homelab} $|$ repurposed laptops running LXCs and VMs}{Feb 2024 - Present}
